@@ -1,0 +1,4 @@
+setf d
+
+ opcode  opx
+00100101 00000ddd setf i3

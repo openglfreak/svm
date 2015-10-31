@@ -1,0 +1,5 @@
+fill d
+
+ opcode  opx
+00010111 000ddddd fill r
+00010111 00100000 dddddddd dddddddd fill m

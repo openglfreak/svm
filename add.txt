@@ -1,0 +1,11 @@
+add d,s
+
+ opcode  opx
+00001000 000sssss 000ddddd add r,r
+00001000 001ddddd ssssssss ssssssss add r,m
+00001000 010ddddd ssssssss add r,i
+00001000 011sssss dddddddd dddddddd add m,r
+00001000 10000000 ssssssss ssssssss dddddddd dddddddd add m,m
+00001000 10100000 ssssssss dddddddd dddddddd add m,i
+00001000 110sssss 000ddddd add *r,r
+00001000 111ddddd ssssssss add *r,i

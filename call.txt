@@ -1,0 +1,11 @@
+call d+o
+
+ opcode  opx
+00110001 000ddddd call r+1:r
+00110001 001ddddd call *((r+1:r)+1:(r+1:r))
+00110001 010ddddd oooooooo oooooooo call r+m
+00110001 011ddddd oooooooo oooooooo call *((r+1:r)+1:(r+1:r))+m
+00110001 100ddddd oooooooo oooooooo call *((r+1:r)+1:(r+1:r))+*(m+1:m)
+00110001 101ddddd oooooooo oooooooo call r+*(m+1:m)
+00110001 11000000 dddddddd dddddddd call m
+00110001 11100000 dddddddd dddddddd call *(m+1:m)

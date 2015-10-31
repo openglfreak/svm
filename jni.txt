@@ -1,0 +1,11 @@
+jni d+o
+
+ opcode  opx
+01000111 000ddddd jni r+1:r
+01000111 001ddddd jni *((r+1:r)+1:(r+1:r))
+01000111 010ddddd oooooooo oooooooo jni r+m
+01000111 011ddddd oooooooo oooooooo jni *((r+1:r)+1:(r+1:r))+m
+01000111 100ddddd oooooooo oooooooo jni *((r+1:r)+1:(r+1:r))+*(m+1:m)
+01000111 101ddddd oooooooo oooooooo jni r+*(m+1:m)
+01000111 11000000 dddddddd dddddddd jni m
+01000111 11100000 dddddddd dddddddd jni *(m+1:m)

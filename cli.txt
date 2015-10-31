@@ -1,0 +1,4 @@
+cli
+
+ opcode
+00100000 cli

@@ -1,0 +1,8 @@
+pop d
+
+ opcode  opx
+00110001 000ddddd pop r
+00110001 00100000 dddddddd pop m
+00110001 01000000 dddddddd pop i
+00110001 011ddddd pop *r
+00110001 10000000 dddddddd pop *m

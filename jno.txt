@@ -1,0 +1,11 @@
+jno d+o
+
+ opcode  opx
+00111111 000ddddd jno r+1:r
+00111111 001ddddd jno *((r+1:r)+1:(r+1:r))
+00111111 010ddddd oooooooo oooooooo jno r+m
+00111111 011ddddd oooooooo oooooooo jno *((r+1:r)+1:(r+1:r))+m
+00111111 100ddddd oooooooo oooooooo jno *((r+1:r)+1:(r+1:r))+*(m+1:m)
+00111111 101ddddd oooooooo oooooooo jno r+*(m+1:m)
+00111111 11000000 dddddddd dddddddd jno m
+00111111 11100000 dddddddd dddddddd jno *(m+1:m)

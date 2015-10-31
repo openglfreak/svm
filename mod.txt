@@ -1,0 +1,9 @@
+mod d,s
+
+ opcode  opx
+00001100 000sssss 000ddddd mod r,r
+00001100 001ddddd ssssssss ssssssss mod r,m
+00001100 010ddddd ssssssss mod r,i
+00001100 011sssss dddddddd dddddddd mod m,r
+00001100 10000000 ssssssss ssssssss dddddddd dddddddd mod m,m
+00001100 10100000 ssssssss dddddddd dddddddd mod m,i

@@ -1,0 +1,84 @@
+SREG: i...onzc
+
+00 err
+01 nop
+02 sel
+03 next
+04 .
+05 .
+06 .
+07 .
+
+08 add
+09 sub
+0A mul
+0B div
+0C mod
+0D neg
+0E inc
+0F dec
+
+10 shl
+11 shr
+12 and
+13 or
+14 xor
+15 inv
+16 clr
+17 fill
+
+18 in
+19 out
+1A clrpb
+1B setpb
+1C .
+1D .
+1E .
+1F .
+
+20 cli
+21 sti
+22 clc
+23 stc
+24 clrf
+25 setf
+26 invf
+27 andf
+
+28 smul
+29 sdiv
+2A adc
+2B sbc
+2C mov
+2D movi
+2E test
+2F cmp
+
+30 push
+31 pop
+31 call
+33 .
+34 jmp
+35 .
+36 jbc
+37 jbs
+
+38 jc
+39 jnc
+3A jz
+3B jnz
+3C jn
+3D jnn
+3E jo
+3F jno
+
+40 .
+41 .
+42 .
+43 .
+44 .
+45 .
+46 ji
+47 jni
+
+48-FF .

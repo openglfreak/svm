@@ -1,0 +1,9 @@
+sdiv d,s
+
+ opcode  opx
+00101001 000sssss 000ddddd sdiv r+1:r,r+1:r
+00101001 001ddddd ssssssss ssssssss sdiv r+1:r,m+1:m
+00101001 010ddddd ssssssss ssssssss sdiv r+1:r,i16
+00101001 011sssss dddddddd dddddddd sdiv m+1:m,r+1:r
+00101001 10000000 ssssssss ssssssss dddddddd dddddddd sdiv m+1:m,m+1:m
+00101001 10100000 ssssssss ssssssss dddddddd dddddddd sdiv m+1:m,i16

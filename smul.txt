@@ -1,0 +1,9 @@
+smul d,s
+
+ opcode  opx
+00101000 000sssss 000ddddd smul r,r -> d+1:d
+00101000 001ddddd ssssssss ssssssss smul r,m -> d+1:d
+00101000 010ddddd ssssssss smul r,i -> d+1:d
+00101000 011sssss dddddddd dddddddd smul m,r -> d+1:d
+00101000 10000000 ssssssss ssssssss dddddddd dddddddd smul m,m -> d+1:d
+00101000 10100000 ssssssss dddddddd dddddddd smul m,i -> d+1:d

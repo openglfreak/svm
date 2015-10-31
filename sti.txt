@@ -1,0 +1,4 @@
+sti
+
+ opcode
+00100001 sti

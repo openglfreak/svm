@@ -1,0 +1,5 @@
+inc d
+
+ opcode  opx
+00001110 000ddddd inc r
+00001110 00100000 dddddddd dddddddd inc m

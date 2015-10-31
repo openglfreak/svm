@@ -1,0 +1,11 @@
+cmp d,s
+
+ opcode  opx
+00101111 000sssss 000ddddd cmp r,r
+00101111 001ddddd ssssssss ssssssss cmp r,m
+00101111 010ddddd ssssssss cmp r,i
+00101111 011sssss dddddddd dddddddd cmp m,r
+00101111 10000000 ssssssss ssssssss dddddddd dddddddd cmp m,m
+00101111 10100000 ssssssss dddddddd dddddddd cmp m,i
+00101111 110sssss 000ddddd cmp *r,r
+00101111 111ddddd ssssssss cmp *r,i

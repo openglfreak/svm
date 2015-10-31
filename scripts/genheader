@@ -1,0 +1,16 @@
+#!/bin/bash
+
+instructions_file=${1:-/dev/stdin}
+mnem_prefix=$2
+
+while read line; do
+    [ -z "$line" ] && continue
+    opcode="${line%% *}"
+    mnem="${line#* }"
+    mnem="${mnem%% *}"
+    if [[ "$opcode" =~ '^[0-9A-F]+$' ]] && [ "$mnem" != '.' ]; then
+        [ -n "$prev_opcode" ] && ( [ $((0x$opcode-1)) -ne $((0x$prev_opcode)) ] || [ $((0x$opcode%8)) -eq 0 ] ) && echo
+        echo "#define $(echo $mnem_prefix$mnem | tr [a-z] [A-Z])_OPCODE 0x$opcode"
+        prev_opcode="$opcode"
+    fi
+done < $instructions_file

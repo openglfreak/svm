@@ -1,0 +1,7 @@
+menmonic [operands]
+
+ opcode [opx]
+m......l m......l m......l ...
+   1       [2]      [3]    ...
+
+encoding list

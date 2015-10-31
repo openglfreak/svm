@@ -1,0 +1,5 @@
+clrpb d,s
+
+ opcode  opx
+00011010 000ddddd 00000sss clrpb r+1:r,i3
+00011010 00100sss dddddddd dddddddd clrpb m+1:m,i3

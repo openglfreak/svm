@@ -1,0 +1,11 @@
+jnz d+o
+
+ opcode  opx
+00111011 000ddddd jnz r+1:r
+00111011 001ddddd jnz *((r+1:r)+1:(r+1:r))
+00111011 010ddddd oooooooo oooooooo jnz r+m
+00111011 011ddddd oooooooo oooooooo jnz *((r+1:r)+1:(r+1:r))+m
+00111011 100ddddd oooooooo oooooooo jnz *((r+1:r)+1:(r+1:r))+*(m+1:m)
+00111011 101ddddd oooooooo oooooooo jnz r+*(m+1:m)
+00111011 11000000 dddddddd dddddddd jnz m
+00111011 11100000 dddddddd dddddddd jnz *(m+1:m)

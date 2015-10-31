@@ -1,0 +1,13 @@
+#!/bin/sh
+
+(
+    printf '#ifndef __OPCODES_H__\n#define __OPCODES_H__\n\n'
+    ./genheader instructions.txt
+    printf '\n#endif // __OPCODES_H__\n'
+) > opcodes.h
+
+(
+    printf '#ifndef __ADVANCED_OPCODES_H__\n#define __ADVANCED_OPCODES_H__\n\n'
+    ./genheader advanced/advanced_instructions.txt ADV_
+    printf '\n#endif // __ADVANCED_OPCODES_H__\n'
+) > advanced_opcodes.h

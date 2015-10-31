@@ -1,0 +1,5 @@
+dec d
+
+ opcode  opx
+00001111 000ddddd dec r
+00001111 00100000 dddddddd dddddddd dec m

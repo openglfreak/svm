@@ -1,0 +1,9 @@
+test d,s
+
+ opcode  opx
+00101110 000sssss 000ddddd test r,r
+00101110 001ddddd ssssssss ssssssss test r,m
+00101110 010ddddd ssssssss test r,i
+00101110 011sssss dddddddd dddddddd test m,r
+00101110 10000000 ssssssss ssssssss dddddddd dddddddd test m,m
+00101110 10100000 ssssssss dddddddd dddddddd test m,i

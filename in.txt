@@ -1,0 +1,7 @@
+in d,s
+
+ opcode  opx
+00011000 000ddddd 000sssss in r,r+1:r
+00011000 001ddddd ssssssss ssssssss in r,i16
+00011000 010sssss dddddddd dddddddd in m,r+1:r
+00011000 01100000 ssssssss ssssssss dddddddd dddddddd in m,i16

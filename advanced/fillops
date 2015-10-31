@@ -1,0 +1,30 @@
+#!/bin/bash
+
+declare -A ops=()
+
+instructions_file=$1
+instructions_file=${instructions_file:=advanced_instructions.txt}
+
+instructions_file_path=${instructions_file%/*}
+instructions_file_path=${instructions_file_path/$instructions_file/.}
+
+
+while read line
+do
+    opcode=${line%% *}
+    mnem=${line#* }
+    mnem=${mnem%% *}
+    if ( [ -n "$line" ] && [[ $opcode =~ ^[0-9A-F]+$ ]] && [ "$mnem" != "." ] )
+    then
+        mnems="$mnems $mnem"
+        opcode_binary=$(echo "ibase=16; obase=2; $opcode" | bc)
+        ops[$mnem]=$(printf "%08i" $opcode_binary)
+    fi
+done < $instructions_file
+
+
+for mnem in $mnems
+do
+    opcode_binary=${ops[$mnem]}
+    sed -i "s/^[[:digit:]]\\{8\\} /$opcode_binary /g" $instructions_file_path/$mnem.txt
+done

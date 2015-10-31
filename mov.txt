@@ -1,0 +1,9 @@
+mov d,s
+
+ opcode  opx
+00101100 000sssss 000ddddd mov r,r
+00101100 001ddddd ssssssss ssssssss mov r,m
+00101100 010ddddd ssssssss mov r,i
+00101100 01100000 ssssssss ssssssss dddddddd dddddddd mov m,m
+00101100 100sssss dddddddd dddddddd mov m,r
+00101100 10100000 ssssssss dddddddd dddddddd mov m,i

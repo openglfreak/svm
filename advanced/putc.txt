@@ -1,0 +1,8 @@
+putc d
+
+ opcode  opx
+00000000 000ddddd putc r
+00000000 00100000 dddddddd dddddddd putc m
+00000000 01000000 dddddddd putc i
+00000000 011ddddd putc *r
+00000000 10000000 dddddddd dddddddd putc *m

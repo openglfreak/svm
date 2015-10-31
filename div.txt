@@ -1,0 +1,9 @@
+div d,s
+
+ opcode  opx
+00001011 000sssss 000ddddd div r+1:r,r+1:r
+00001011 001ddddd ssssssss ssssssss div r+1:r,m+1:m
+00001011 010ddddd ssssssss ssssssss div r+1:r,i16
+00001011 011sssss dddddddd dddddddd div m+1:m,r+1:r
+00001011 10000000 ssssssss ssssssss dddddddd dddddddd div m+1:m,m+1:m
+00001011 10100000 ssssssss ssssssss dddddddd dddddddd div m+1:m,i16

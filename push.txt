@@ -1,0 +1,5 @@
+push d
+
+ opcode  opx
+00110000 000ddddd push r
+00110000 00100000 dddddddd push m

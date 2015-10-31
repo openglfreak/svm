@@ -1,0 +1,5 @@
+inv d
+
+ opcode  opx
+00010101 000ddddd inv r
+00010101 00100000 dddddddd dddddddd inv m

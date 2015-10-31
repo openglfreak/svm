@@ -1,0 +1,11 @@
+jbc d+o,s
+
+ opcode  opx
+00110110 000ddddd 00000sss jbc r+1:r,i3
+00110110 001ddddd 00000sss jbc *((r+1:r)+1:(r+1:r)),i3
+00110110 010ddddd oooooooo oooooooo 00000sss jbc r+m,i3
+00110110 011ddddd oooooooo oooooooo 00000sss jbc *((r+1:r)+1:(r+1:r))+m,i3
+00110110 100ddddd oooooooo oooooooo 00000sss jbc *((r+1:r)+1:(r+1:r))+*(m+1:m),i3
+00110110 101ddddd oooooooo oooooooo 00000sss jbc r+*(m+1:m),i3
+00110110 11000sss dddddddd dddddddd jbc m,i3
+00110110 11100sss dddddddd dddddddd jbc *(m+1:m),i3

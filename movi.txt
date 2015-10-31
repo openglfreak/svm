@@ -1,0 +1,11 @@
+movi d,s
+
+ opcode  opx
+00101101 000sssss 000ddddd movi *r,r
+00101101 001ddddd ssssssss ssssssss movi *r,m
+00101101 010ddddd ssssssss movi *r,i
+00101101 01100000 ssssssss ssssssss dddddddd dddddddd movi *m,m
+00101101 100sssss dddddddd dddddddd movi *m,r
+00101101 10100000 ssssssss dddddddd dddddddd movi *m,i
+00101101 110ddddd 000sssss movi *r,*r
+00101101 111ddddd ssssssss ssssssss movi *r,*m

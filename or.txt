@@ -1,0 +1,9 @@
+or d,s
+
+ opcode  opx
+00010011 000sssss 000ddddd or r,r
+00010011 001ddddd ssssssss ssssssss or r,m
+00010011 010ddddd ssssssss or r,i
+00010011 011sssss dddddddd dddddddd or m,r
+00010011 10000000 ssssssss ssssssss dddddddd dddddddd or m,m
+00010011 10100000 ssssssss dddddddd dddddddd or m,i

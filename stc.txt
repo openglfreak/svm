@@ -1,0 +1,4 @@
+stc
+
+ opcode
+00100011 stc

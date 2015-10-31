@@ -1,0 +1,9 @@
+mul d,s
+
+ opcode  opx
+00001010 000sssss 000ddddd mul r,r -> d+1:d
+00001010 001ddddd ssssssss ssssssss mul r,m -> d+1:d
+00001010 010ddddd ssssssss mul r,i -> d+1:d
+00001010 011sssss dddddddd dddddddd mul m,r -> d+1:d
+00001010 10000000 ssssssss ssssssss dddddddd dddddddd mul m,m -> d+1:d
+00001010 10100000 ssssssss dddddddd dddddddd mul m,i -> d+1:d

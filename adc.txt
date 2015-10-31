@@ -1,0 +1,11 @@
+adc d,s
+
+ opcode  opx
+00101010 000sssss 000ddddd adc r,r
+00101010 001ddddd ssssssss ssssssss adc r,m
+00101010 010ddddd ssssssss adc r,i
+00101010 011sssss dddddddd dddddddd adc m,r
+00101010 10000000 ssssssss ssssssss dddddddd dddddddd adc m,m
+00101010 10100000 ssssssss dddddddd dddddddd adc m,i
+00101010 110sssss 000ddddd adc *r,r
+00101010 111ddddd ssssssss adc *r,i

@@ -1,0 +1,5 @@
+setpb d,s
+
+ opcode  opx
+00011011 000ddddd 00000sss setpb r+1:r,i3
+00011011 00100sss dddddddd dddddddd setpb m+1:m,i3

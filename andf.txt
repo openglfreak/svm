@@ -1,0 +1,4 @@
+andf d
+
+ opcode
+00100111 dddddddd andf i

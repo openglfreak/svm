@@ -1,0 +1,9 @@
+xor d,s
+
+ opcode  opx
+00010100 000sssss 000ddddd xor r,r
+00010100 001ddddd ssssssss ssssssss xor r,m
+00010100 010ddddd ssssssss xor r,i
+00010100 011sssss dddddddd dddddddd xor m,r
+00010100 10000000 ssssssss ssssssss dddddddd dddddddd xor m,m
+00010100 10100000 ssssssss dddddddd dddddddd xor m,i

@@ -1,0 +1,8 @@
+getc d
+
+ opcode  opx
+00000001 000ddddd getc r
+00000001 00100000 dddddddd dddddddd getc m
+00000001 01000000 dddddddd getc i
+00000001 011ddddd getc *r
+00000001 10000000 dddddddd dddddddd getc *m

@@ -1,0 +1,7 @@
+shl d,s
+
+ opcode  opx
+00010000 000ddddd 00000sss shl r,i3
+00010000 001ddddd 00000sss shl r,i3 -> d+1:d
+00010000 01000sss dddddddd dddddddd shl m,i3
+00010000 01100sss dddddddd dddddddd shl m,i3 -> d+1:d

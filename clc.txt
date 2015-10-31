@@ -1,0 +1,4 @@
+clc
+
+ opcode
+00100010 clc

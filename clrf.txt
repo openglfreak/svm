@@ -1,0 +1,4 @@
+clrf d
+
+ opcode  opx
+00100100 00000ddd clrf i3

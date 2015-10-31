@@ -1,0 +1,11 @@
+ji d+o
+
+ opcode  opx
+01000110 000ddddd ji r+1:r
+01000110 001ddddd ji *((r+1:r)+1:(r+1:r))
+01000110 010ddddd oooooooo oooooooo ji r+m
+01000110 011ddddd oooooooo oooooooo ji *((r+1:r)+1:(r+1:r))+m
+01000110 100ddddd oooooooo oooooooo ji *((r+1:r)+1:(r+1:r))+*(m+1:m)
+01000110 101ddddd oooooooo oooooooo ji r+*(m+1:m)
+01000110 11000000 dddddddd dddddddd ji m
+01000110 11100000 dddddddd dddddddd ji *(m+1:m)

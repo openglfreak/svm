@@ -1,0 +1,7 @@
+out d,s
+
+ opcode  opx
+00011001 000sssss 000ddddd out r+1:r,r
+00011001 001sssss dddddddd dddddddd out i16,r
+00011001 010ddddd ssssssss ssssssss out r+1:r,m
+00011001 01100000 dddddddd dddddddd ssssssss ssssssss out i16,m

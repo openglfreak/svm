@@ -1,0 +1,11 @@
+jmp d+o
+
+ opcode  opx
+00110100 000ddddd jmp r+1:r
+00110100 001ddddd jmp *((r+1:r)+1:(r+1:r))
+00110100 010ddddd oooooooo oooooooo jmp r+m
+00110100 011ddddd oooooooo oooooooo jmp *((r+1:r)+1:(r+1:r))+m
+00110100 100ddddd oooooooo oooooooo jmp *((r+1:r)+1:(r+1:r))+*(m+1:m)
+00110100 101ddddd oooooooo oooooooo jmp r+*(m+1:m)
+00110100 11000000 dddddddd dddddddd jmp m
+00110100 11100000 dddddddd dddddddd jmp *(m+1:m)
