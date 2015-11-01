@@ -1,0 +1,6 @@
+#!/bin/sh
+
+(
+    find . -maxdepth 1 -name '*.txt' -printf '%f\n' | grep -o '^[^.]*' | grep -v 'inst.*'
+    grep -o '[^ ]*$' instructions.txt | grep -v '\.'
+) | sort | uniq -u

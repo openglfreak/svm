@@ -1,0 +1,4 @@
+sel d
+
+ opcode
+00000010 dddddddd sel i8

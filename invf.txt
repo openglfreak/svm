@@ -1,4 +1,4 @@
 invf d
 
- opcode  opx
+ opcode
 00100110 00000ddd invf i3

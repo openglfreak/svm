@@ -1,6 +1,6 @@
 SREG: i...onzc
 
-00 err
+00 invalid
 01 nop
 02 sel
 03 next
@@ -81,4 +81,22 @@ SREG: i...onzc
 46 ji
 47 jni
 
-48-FF .
+48-EF .
+
+F0 l0
+F1 l1
+F2 l2
+F3 l3
+F4 l4
+F5 l5
+F6 l6
+F7 l7
+
+F8 l8
+F9 l9
+FA l10
+FB l11
+FC l12
+FD l13
+FE l14
+FF l15

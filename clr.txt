@@ -1,5 +1,5 @@
 clr d
 
- opcode  opx
+ opcode
 00010110 000ddddd clr r
 00010110 00100000 dddddddd dddddddd clr m
